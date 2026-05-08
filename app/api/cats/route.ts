@@ -1,5 +1,3 @@
-import { json } from "stream/consumers";
-
 const cats = [
     {
         name: "George"
