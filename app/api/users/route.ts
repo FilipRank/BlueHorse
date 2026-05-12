@@ -20,7 +20,7 @@ export async function GET(request: NextRequest) {
                     id: true,
                     username: true,
                     description: true,
-                    imageUri: true,
+                    image: true,
                     createdAt: true,
                     _count: {
                         select: { ownedComics: true, subscriptions: true, comments: true },

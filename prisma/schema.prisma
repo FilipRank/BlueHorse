@@ -46,7 +46,7 @@ model Comment {
 }
 
 model User {
-  id            String         @id @default(cuid())
+  id            String         @id @default(uuid())
   username      String         @unique
   description   String?
   ownedComics   Comic[]
@@ -75,7 +75,7 @@ model Subscription {
 }
 
 model Account {
-  id                String  @id @default(cuid())
+  id                String  @id @default(uuid())
   userId            String  @map("user_id")
   type              String
   provider          String
